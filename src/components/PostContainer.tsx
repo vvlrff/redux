@@ -1,7 +1,5 @@
-import React from 'react'
 import { postAPI } from '../services/PostService'
 import PostItem from './PostItem'
-import { UseAppSelector } from '../hooks/redux'
 
 const PostContainer = () => {
     const { data: posts, error, isLoading } = postAPI.useFetchAllPostsQuery(10)
